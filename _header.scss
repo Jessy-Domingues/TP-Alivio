@@ -1,0 +1,55 @@
+header {
+    display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+
+        h1 {
+            color: $prim;
+            font-size: 1.5em;
+        }
+
+        nav {
+            width: 50%;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                li {
+                    display: flex;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+
+                    }
+
+                }
+            }
+        }
+
+        // Sign in et Start trial
+        div {
+            width: 25%;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                padding-left: 0%;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+}
