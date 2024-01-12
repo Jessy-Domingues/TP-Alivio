@@ -9,47 +9,71 @@ header {
             color: $prim;
             font-size: 1.5em;
         }
+        .contain{
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
 
-        nav {
-            width: 50%;
-
-            ul {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-
-                li {
-                    display: flex;
-
-                    a {
-                        color: black;
-                        text-decoration: none;
-
-                    }
-
-                }
-            }
+        @media only screen and (max-width: 1024px){
+            display: none;
         }
-
-        // Sign in et Start trial
-        div {
-            width: 25%;
-
-            ul {
-                display: flex;
-                justify-content: space-around;
-                padding-left: 0%;
-
-                li {
+            nav {
+                width: 50%;
+    
+                ul {
                     display: flex;
+                    justify-content: space-around;
                     align-items: center;
-
-                    a {
-                        color: black;
-                        text-decoration: none;
-
+    
+                    li {
+                        display: flex;
+    
+                        a {
+                            color: black;
+                            text-decoration: none;
+    
+                        }
+    
+                    }
+                }
+            }
+    
+            // Sign in et Start trial
+            div {
+                width: 25%;
+    
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    padding-left: 0%;
+    
+                    li {
+                        display: flex;
+                        align-items: center;
+    
+                        a {
+                            color: black;
+                            text-decoration: none;
+    
+                        }
                     }
                 }
             }
         }
+    .menu-button{
+        display: none;
+        cursor: pointer;
+        @media only screen and (max-width: 1024px){
+            display: flex;
+        }
+    }
+    svg{
+        height: 40px;
+        width: 40px;
+        fill: $prim;
+        stroke: $prim;
+        transition: all 0.75s ease;
+    }
 }

@@ -9,36 +9,64 @@ header h1 {
   color: #01996D;
   font-size: 1.5em;
 }
-header nav {
+header .contain {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  header .contain {
+    display: none;
+  }
+}
+header .contain nav {
   width: 50%;
 }
-header nav ul {
+header .contain nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header nav ul li {
+header .contain nav ul li {
   display: flex;
 }
-header nav ul li a {
+header .contain nav ul li a {
   color: black;
   text-decoration: none;
 }
-header div {
+header .contain div {
   width: 25%;
 }
-header div ul {
+header .contain div ul {
   display: flex;
   justify-content: space-around;
   padding-left: 0%;
 }
-header div ul li {
+header .contain div ul li {
   display: flex;
   align-items: center;
 }
-header div ul li a {
+header .contain div ul li a {
   color: black;
   text-decoration: none;
+}
+header .menu-button {
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  header .menu-button {
+    display: flex;
+  }
+}
+header svg {
+  height: 40px;
+  width: 40px;
+  fill: #01996D;
+  stroke: #01996D;
+  transition: all 0.75s ease;
 }
 
 footer {
@@ -79,10 +107,55 @@ body {
   font-weight: 500;
   margin: 0%;
 }
+body .contain_2 {
+  display: none;
+}
+body .actif {
+  display: flex;
+  flex-direction: column;
+}
+body .actif nav {
+  width: 90%;
+  margin: auto;
+}
+body .actif nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  body .actif nav ul {
+    padding: 0%;
+  }
+}
+body .actif nav ul li {
+  display: flex;
+}
+body .actif nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+body .actif div {
+  width: 50%;
+  margin: auto;
+}
+body .actif div ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0%;
+}
+body .actif div ul li {
+  display: flex;
+  align-items: center;
+}
+body .actif div ul li a {
+  color: black;
+  text-decoration: none;
+}
 body .bouton {
   background-color: #01996D;
   color: white;
-  padding: 0 50px;
+  padding: 0 35px;
   border-radius: 4px;
   height: 40px;
   text-align: center;
@@ -246,7 +319,6 @@ body .second-section article p {
 @media only screen and (max-width: 768px) {
   body .second-section article p {
     text-align: center;
-    min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
   }
@@ -439,7 +511,6 @@ body .fourth-section .fourth-bloc .photo-bloc .card div {
   border-radius: 50%;
 }
 body .fourth-section .fourth-bloc .photo-bloc .card div img {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: auto;
@@ -453,7 +524,6 @@ body .fourth-section .fourth-bloc .photo-bloc .card p {
 body .fourth-section .fourth-bloc .photo-bloc .card h4 {
   font-family: "georgia", serif;
   font-weight: 700;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 3% 0%;
